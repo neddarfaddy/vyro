@@ -29,16 +29,22 @@
 
   html {
     background-color: #0d0d0d;  
+    scroll-behavior: smooth;
+
   }
 
-body {
-  padding-left: 1rem;
-  padding-right: 1rem;  
-}
+
   /* header */
 
   header {
-    background: linear-gradient(to bottom, rgba(13, 13, 13, 1), rgba(13, 13, 13, 0));
+    background: linear-gradient(
+      to bottom,
+      rgba(13, 13, 13, 1) 0%,
+      rgba(13, 13, 13, 0.9) 30%, 
+
+      rgba(13, 13, 13, 0.6) 60%,
+      rgba(13, 13, 13, 0) 100%
+    );
     display: flex;
     position: fixed;
     width: 100%;
@@ -46,6 +52,20 @@ body {
 padding-right: 0.5rem;  
 height: 5rem; 
 
+  }
+
+  footer {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(13, 13, 13, 1) 0%,
+      rgba(13, 13, 13, 0.9) 30%, 
+
+      rgba(13, 13, 13, 0.6) 60%,
+      rgba(13, 13, 13, 0) 100%
+    );    height: 5rem; 
+    bottom: 0;  
   }
 
   header ol {
@@ -71,5 +91,246 @@ font-size: 0.9rem;
 
 .hero-section {
   height: 100vh;
-  background-image: url(./);
+ text-align: center; 
+ display: flex;
+ flex-direction: column;
+ padding-top: 30%;
+  background-color: aqua;
+  background-image: url(./imgs/Mobile\ wallpaper.png);
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
 }
+
+.hero-section h1 {
+  font-size: 4.9rem; 
+  line-height: 0.9;
+ 
+}
+
+.hero-section span {
+  color: #EB3939;
+}
+
+.hero-section h3 {
+  letter-spacing: 0.4rem;   
+}
+
+    /* hero */
+
+
+.introduction-section {
+  padding-top: 5rem ;
+
+  
+
+}
+
+.introduction-section h1  {
+  font-size: 4.9rem; 
+  line-height: 0.9;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.introduction-section span {
+  color: #EB3939;
+}
+
+.introduction-section p {
+  font-weight: bolder;
+  padding-left: 1rem;
+  line-height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.introduction-content  {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+    /* hero */
+
+
+.moto-section  {
+  height: 90vh;  
+  padding-left: 1rem;
+  padding-right: 1rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.moto-content h3 {
+  font-size: 0.9rem; 
+  color: #EB3939;
+  margin-bottom: 1rem;
+
+}
+.moto-section  h1{
+  font-size: 4.9rem; 
+  line-height: 0.9;
+  
+}
+
+.moto-section span {
+  color: #EB3939;
+
+}
+
+.line {
+  width: 100%;
+  height: 0.1px;
+  opacity: 0.3;   
+  background-color: #B7AB98;
+}
+
+    /* hero */
+
+    .reason-section {
+      height: 80vh; 
+      width: 100%; 
+      background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat; 
+      background-image: url(./imgs/Young-man-portrait.png);
+      display: flex;
+      align-items: end;
+      padding-left: 1rem;
+padding-right: 1rem;
+padding-bottom: 2rem; 
+
+    }
+
+
+ 
+
+    .reason-content h1 {
+      font-size: 4.9rem; 
+      line-height: 0.9; 
+    }
+
+    .reason-content h3{
+      font-size: 0.9rem; 
+      color: #EB3939;
+      margin-bottom: 1rem;
+    }
+    .reason-content span {
+      color: #EB3939;
+
+    }
+
+    .reason-content p {
+      font-weight: bolder;
+      font-size: 2.7rem;
+      line-height: 2.5rem;
+
+    }
+   /* hero */
+
+    .writing-section    {
+      padding-top: 10rem; 
+      text-align: center;
+      padding-left: 1rem; 
+      padding-right: 1rem;
+      padding-bottom: 6rem; 
+
+    }
+
+    .writing-content p {
+      font-size: 2.9rem; 
+      line-height: 0.9; 
+      font-weight: bold;
+    }
+
+    .writing-content span {
+      color: #EB3939;
+
+    }
+
+
+
+
+
+
+
+
+    .model-section {
+      padding-bottom: 5rem;
+      padding-left: 1rem; 
+      padding-right: 1rem;
+    }
+
+    .model-content  {
+text-align: center; 
+width: 100%;
+    }
+
+    .model-content h3 {
+      font-size: 1rem;
+    }
+
+    .items {
+      padding-top: 6rem;
+      width: 100%;  
+      display: grid; 
+      text-align: left;
+      grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+column-gap: 0.7rem;
+row-gap: 1rem; 
+    }
+
+    .items h2{
+      font-size: 1.1rem; 
+      color: #EB3939;
+      font-weight: bolder; 
+ 
+    }
+
+
+    .item-content  img{
+      width: 100%;
+    }
+
+    .items p {
+  
+        text-transform: uppercase;
+    font-weight: bolder;
+    }
+
+
+
+
+
+
+    .closing-section {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: center;
+      padding-bottom: 6rem;
+    }
+    .closing-section-content {
+
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .closing-section-content h1 {
+      width: 100%;
+      font-size: 1.6rem; 
+      margin-inline: auto; 
+    }
+
+    .closing-section-content span {
+      color: #EB3939;
+
+    }
+
+    .closing-section-content p {
+      text-transform: uppercase;
+      font-size: 0.8rem; 
+      line-height: 1.4rem;
+      font-weight: bold;
+    }
