@@ -24,14 +24,14 @@
     </footer>
 <!-- HERO -->
 
-<main id="home" class="hero-section">
+<main id="home" class="fade-up hero-section">
 <h3>VYRO</h3>
 <h1>LIGHTING <br> <span>THE <br> STREETS </span> <br> WITH <br>POWER</h1> 
 </main>
 
 <!-- INTRODUCTION -->
 
-<section class="introduction-section">
+<section class="fade-up introduction-section">
 
 <div id="about" class="introduction-content">
     <h1>
@@ -46,7 +46,7 @@
 
 <!-- MOTO -->
 
-<section class="moto-section">
+<section class="fade-up moto-section">
 
 <div class="moto-content">
     <h3>OUR MOTO</h3>
@@ -68,7 +68,7 @@
 </section>
 
 <!-- MOTO -->
-<section class="reason-section">
+<section class="fade-up reason-section">
     <div class="reason-content">
         <h3>WHY WE EXIST</h3>
         <p>We make performance gear for <span>people</span> who move — <span>physically</span>, <span>mentally</span>, and <span>relentlessly</span>.</p>
@@ -77,7 +77,7 @@
 
 
 
-<section  class="writing-section">
+<section  class="fade-up writing-section">
     <div class="writing-content">
         <p>
 
@@ -88,7 +88,7 @@
 </section>
 
 
-<section id="models" class="model-section">
+<section  id="models" class="fade-up model-section">
     <div class="model-content">
         <h3>OUR MODELS /></h3>
         <div class="items">
@@ -161,12 +161,32 @@
 </section>
 
 
-<section class="closing-section">
+<section class="fade-up closing-section">
     <div class="closing-section-content">
         <h1>VYRO ISN'T JUST A COMPANY <br> <span>— IT'S A COLLECTIVE.</span></h1>
         <p>Built and designed by <span>Faddy Neddar.</span>
             <br> All rights reserved. ©</p>
     </div>
 </section>
+
+
+
+<script>
+    const fadeUps = document.querySelectorAll('.fade-up');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible'); // 👈 this fades it out again
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+  
+    fadeUps.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
