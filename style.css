@@ -28,7 +28,7 @@
   }
 
   html {
-    background-color: #0d0d0d;  
+    background-color: rgb(7, 7, 7);  
     scroll-behavior: smooth;
 
   }
@@ -39,11 +39,11 @@
   header {
     background: linear-gradient(
       to bottom,
-      rgba(13, 13, 13, 1) 0%,
-      rgba(13, 13, 13, 0.9) 30%, 
+      rgba(07, 07, 07, 1) 0%,
+      rgba(07, 07, 07, 0.9) 30%, 
 
-      rgba(13, 13, 13, 0.6) 60%,
-      rgba(13, 13, 13, 0) 100%
+      rgba(07, 07, 07, 0.6) 60%,
+      rgba(07, 07, 07, 0) 100%
     );
     display: flex;
     position: fixed;
@@ -59,11 +59,11 @@ height: 5rem;
     width: 100%;
     background: linear-gradient(
       to top,
-      rgba(13, 13, 13, 1) 0%,
-      rgba(13, 13, 13, 0.9) 30%, 
+      rgba(07, 07, 07, 1) 0%,
+      rgba(07, 07, 07, 0.9) 30%, 
 
-      rgba(13, 13, 13, 0.6) 60%,
-      rgba(13, 13, 13, 0) 100%
+      rgba(07, 07, 07, 0.6) 60%,
+      rgba(07, 07, 07, 0) 100%
     );    height: 5rem; 
     bottom: 0;  
   }
@@ -95,7 +95,6 @@ font-size: 0.9rem;
  display: flex;
  flex-direction: column;
  padding-top: 30%;
-  background-color: aqua;
   background-image: url(./imgs/Mobile\ wallpaper.png);
   background-size: cover;      
   background-position: center; 
@@ -155,8 +154,7 @@ font-size: 0.9rem;
 
 .moto-section  {
   height: 90vh;  
-  padding-left: 1rem;
-  padding-right: 1rem; 
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,12 +163,16 @@ font-size: 0.9rem;
 .moto-content h3 {
   font-size: 0.9rem; 
   color: #EB3939;
+  padding-left: 1rem;
+  padding-right: 1rem; 
   margin-bottom: 1rem;
 
 }
 .moto-section  h1{
   font-size: 4.9rem; 
   line-height: 0.9;
+  padding-left: 1rem;
+  padding-right: 1rem; 
   
 }
 
@@ -180,8 +182,8 @@ font-size: 0.9rem;
 }
 
 .line {
-  width: 100%;
-  height: 0.1px;
+  width: 100%; 
+  height: 0.1rem;
   opacity: 0.3;   
   background-color: #B7AB98;
 }
