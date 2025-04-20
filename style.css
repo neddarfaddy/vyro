@@ -1,0 +1,75 @@
+
+
+/* Global */
+
+@font-face {
+    font-family: 'Avgard';
+    src: url('./fonts/Avgard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Avgard';
+    src: url('./fonts/Avgard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Avgard', sans-serif;
+    color: #B7AB98;
+  }
+
+  html {
+    background-color: #0d0d0d;  
+  }
+
+body {
+  padding-left: 1rem;
+  padding-right: 1rem;  
+}
+  /* header */
+
+  header {
+    background: linear-gradient(to bottom, rgba(13, 13, 13, 1), rgba(13, 13, 13, 0));
+    display: flex;
+    position: fixed;
+    width: 100%;
+ padding-left: 0.5rem;
+padding-right: 0.5rem;  
+height: 5rem; 
+
+  }
+
+  header ol {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding-left: 1rem;
+    padding-top: 1rem; 
+  padding-right: 1rem;   
+right: 0; 
+    gap: 0.3rem;
+  }
+
+  header ol a {
+    text-decoration: none;
+text-align: right; 
+font-weight: bolder;
+font-size: 0.9rem;
+  }
+
+    /* hero */
+
+.hero-section {
+  height: 100vh;
+  background-image: url(./);
+}
