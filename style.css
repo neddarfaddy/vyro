@@ -16,6 +16,7 @@
     font-style: normal;
   }
 
+          /* *************************************************************************hero */
 
   *,
   *::before,
@@ -48,7 +49,8 @@
   }
 
 
-  /* header */
+  /* header */          /* *************************************************************************hero */
+
 
   header {
     background: linear-gradient(
@@ -90,6 +92,7 @@ z-index: 1000;
     padding-left: 1rem;
     padding-top: 1rem; 
     margin-left: auto;
+
     gap: 0.3rem;
     z-index: 1000;
   }
@@ -101,8 +104,8 @@ font-weight: bolder;
 font-size: 0.9rem;
 z-index: 1000;
   }
+          /* *************************************************************************hero */
 
-    /* hero */
 
 .hero-section {
   height: 100vh;
@@ -130,7 +133,8 @@ z-index: 1000;
   letter-spacing: 0.4rem;   
 }
 
-    /* hero */
+    /* hero */          /* *************************************************************************hero */
+
 
 
 .introduction-section {
@@ -164,7 +168,8 @@ z-index: 1000;
   flex-direction: column;
 }
 
-    /* hero */
+    /* hero */          /* *************************************************************************hero */
+
 
 
 .moto-section  {
@@ -202,6 +207,7 @@ z-index: 1000;
   opacity: 0.3;   
   background-color: #B7AB98;
 }
+          /* *************************************************************************hero */
 
     /* hero */
 
@@ -244,7 +250,8 @@ padding-bottom: 2rem;
       line-height: 2.5rem;
 
     }
-   /* hero */
+   /* hero */          /* *************************************************************************hero */
+
 
     .writing-section    {
       padding-top: 10rem; 
@@ -270,6 +277,7 @@ padding-bottom: 2rem;
 
 
 
+          /* *************************************************************************hero */
 
 
 
@@ -317,6 +325,7 @@ row-gap: 1rem;
     }
 
 
+          /* *************************************************************************hero */
 
 
 
@@ -351,6 +360,7 @@ row-gap: 1rem;
       line-height: 1.4rem;
       font-weight: bold;
     }
+          /* *************************************************************************hero */
 
     @media (min-width: 400px) {
       .moto-content  h1{
@@ -360,4 +370,323 @@ row-gap: 1rem;
         padding-right: 1rem; 
         
       }
+    }
+
+          /* *************************************************************************hero */
+
+
+
+
+
+          header {
+            background: transparent;
+        height: 10rem; 
+          }
+        
+          footer {
+          
+            background: transparent;
+
+        height: 10rem; 
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (min-width: 1000px) {
+     * {
+      cursor: none;
+     }
+      .custom-cursor {
+        width: 20px;
+        height: 20px;
+        background-color: #EB3939;
+        border-radius: 50%;
+        position: fixed;
+        opacity: 0.8;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        transition: transform 0.15s ease, width 0.15s ease, height 0.15s ease;
+      }
+      
+      /* Enlarged state */
+      .custom-cursor.hovering {
+        width: 64px;
+        height:  64px;
+        opacity: 0.6; 
+        transform: translate(-50%, -50%) scale(1.5);
+      }
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+/* Scrollbar Thumb (the part you drag) */
+::-webkit-scrollbar-thumb {
+  background-color: #EB3939;
+}
+
+/* Scrollbar Track Background */
+::-webkit-scrollbar-track {
+  background-color: #1a1a1a; /* Optional, adjust as needed */
+}
+/* Optional, adjust as needed *//* Optional, adjust as needed *//* Optional, adjust as needed */
+      header ol a {
+   
+    font-size: 2.5rem;
+    color: #7a7367;
+    transition: color 0.3s ease; 
+
+      }
+
+      header ol a:hover {
+   
+        font-size: 2.5rem;
+color: #B7AB98;          }
+
+
+
+      header ol {
+    
+        padding-left: 3rem; 
+        padding-top: 3rem; 
+        margin-right: 2rem; 
+      }
+
+          /* *************************************************************************hero */
+
+
+.hero-section {
+        height: 100vh;
+       text-align: center; 
+       display: flex;
+       flex-direction: column;
+       padding-top: 0;
+       justify-content: center;
+        background-image: url(./imgs/Wallpaper-desktop.png);
+        background-size: cover;      
+        background-position: center; 
+        background-repeat: no-repeat;
+
+        
+      }
+
+
+
+      .hero-section h1 {
+        font-size: 10.9rem; 
+        line-height: 0.9;
+       
+      }
+
+      .hero-section h3 {
+        font-size: 2rem; 
+      }
+          /* hero */
+
+
+          /* *************************************************************************hero */
+
+
+
+          .introduction-section {
+            padding-top: 0 ;
+          
+            
+          
+          }
+
+
+          .introduction-content  {
+            display: flex;
+            gap: 2rem; 
+flex-direction: row;          }
+
+.introduction-content img {
+  flex: 1; 
+}
+.introduction-writing  {
+  flex: 1; 
+  padding-top: 10rem; 
+}
+
+
+
+.introduction-section h1  {
+  font-size: 14.9rem; 
+  padding-left: 5rem;
+}
+
+.introduction-section p {
+  font-weight: bolder;
+  padding-left: 5rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  padding-top: 4rem; 
+}
+
+
+
+
+          /* *************************************************************************hero */
+
+          .moto-section  {
+            height: auto;  
+            padding-top: 20rem; 
+            padding-bottom: 0;  
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+
+
+
+          .moto-content h3 {
+            font-size: 0.9rem; 
+            color: #EB3939;
+          
+          }
+          .moto-section  h1{
+            font-size: 14.3rem; 
+            padding-left: 15rem;
+            
+          }
+
+
+          /* *************************************************************************hero */
+
+          .reason-section {
+            height: 100vh;  
+           
+            background-image: url(./imgs/Desktop-youngman.jpg);
+         
+      padding-left: 5rem; 
+  
+          }
+
+
+
+
+
+
+          .reason-content h1 {
+            font-size: 4.9rem; 
+            line-height: 0.9; 
+          }
+      
+          .reason-content h3{
+            font-size: 5.9rem; 
+            color: #EB3939;
+            margin-bottom: 1rem;
+          }
+          .reason-content span {
+            color: #EB3939;
+      
+          }
+      
+          .reason-content p {
+            font-weight: bolder;
+            font-size: 8.7rem;
+            line-height: 8.5rem; 
+      
+          }
+
+          .writing-section    {
+            padding-top: 30rem;
+            text-align: center;
+            padding-left: 1rem; 
+            padding-right: 1rem;
+            padding-bottom: 12rem;  
+      
+          }
+
+
+
+
+          .writing-content p {
+            font-size: 8.9rem; 
+            line-height: 0.9; 
+            width: 85%;
+            margin-inline: auto;
+            font-weight: bold;
+          }
+      
+          .writing-content span {
+            color: #EB3939;
+      
+          }
+      
+
+
+
+
+          .model-section {
+            padding-left: 1rem; 
+            padding-right: 1rem;
+          }
+
+
+
+
+
+
+
+
+          .items {
+            padding-top: 16rem;
+            width: 100%;  
+            display: grid; 
+            text-align: left;
+            grid-template-columns: repeat(3, 1fr); /* 2 equal columns */
+      column-gap: 1rem;
+      row-gap: 8rem; 
+          }
+
+
+          .items h2{
+            font-size: 3.1rem; 
+            color: #EB3939;
+            font-weight: bolder; 
+       
+          }
+      
+      
+         
+
+          .items p {
+  
+          font-size: 2rem;
+        }
+    
+
+        item-content .hide  {
+          display: none; 
+        }
+
+.closing-section h1 {
+  font-size: 5rem; 
+  padding-top: 14rem;
+
+}
+
+.closing-section-content p {
+  font-size: 1.4rem;
+  line-height: 2rem; 
+  padding-bottom: 4rem; 
+}
+
+
     }

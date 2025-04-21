@@ -36,12 +36,15 @@
 <section class="fade-up introduction-section">
 
 <div id="about" class="introduction-content">
-    <h1>
-        LIVE THE <span>STORY</span>
-    </h1>
-    
-    <p>NO <span>SPONSORS</span>. NO <span>SPOTLIGHT</span>. JUST <span>GRIT</span>, CRACKED PAVEMENT, AND THAT VOICE IN YOUR HEAD SAYING “GO AGAIN.”
-        FROM THAT HUNGER, <span>VYRO</span> WAS BORN — A BRAND BUILT FROM THE STREET UP.</p>
+    <div class="introduction-writing">
+        <h1>
+            LIVE THE <span>STORY</span>
+        </h1>
+        
+        <p>NO <span>SPONSORS</span>. NO <span>SPOTLIGHT</span>. JUST <span>GRIT</span>, CRACKED PAVEMENT, AND THAT VOICE IN YOUR HEAD SAYING “GO AGAIN.”
+            FROM THAT HUNGER, <span>VYRO</span> WAS BORN — A BRAND BUILT FROM THE STREET UP.</p>
+    </div>
+   
         <img src="./imgs/Woman.png" alt="">
 </div>
 </section>
@@ -158,6 +161,13 @@
 
                 </p>
             </div>
+            <div class="hide item-content">
+                <img src="./imgs/Shoes (9).png" alt="">
+                <h2>VYRO NEDDAR XT</h2>
+                <p>SUPERB
+
+                </p>
+            </div>
         </div>
     </div>
 </section>
@@ -171,9 +181,10 @@
     </div>
 </section>
 
-
+<div class="custom-cursor"></div>
 
 <script>
+    // Your fade-up code
     const fadeUps = document.querySelectorAll('.fade-up');
   
     const observer = new IntersectionObserver((entries) => {
@@ -181,7 +192,7 @@
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
         } else {
-          entry.target.classList.remove('visible'); // 👈 this fades it out again
+          entry.target.classList.remove('visible');
         }
       });
     }, {
@@ -189,6 +200,24 @@
     });
   
     fadeUps.forEach(el => observer.observe(el));
+  
+    // Custom cursor logic
+    const cursor = document.querySelector('.custom-cursor');
+  
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = `${e.clientX}px`;
+      cursor.style.top = `${e.clientY}px`;
+    });
+  
+    document.addEventListener('mouseover', (e) => {
+  if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.classList.contains('interactive')) {
+    cursor.classList.add('hovering');
+  }
+});
+
+document.addEventListener('mouseout', (e) => {
+  cursor.classList.remove('hovering');
+});
   </script>
 </body>
 </html>
