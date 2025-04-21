@@ -596,7 +596,11 @@ width: 100%;
             justify-content: center;
           }
 
-
+          .moto-content  {
+          
+display: flex;
+flex-direction: column;
+          }
 
           .moto-content h3 {
             font-size: clamp(1rem, 1vw, 14rem); 
@@ -607,9 +611,8 @@ width: 100%;
           .moto-section  h1{
             font-size: clamp(1rem, 9vw, 14rem);  
             padding-left: 15rem;
-            
           }
-
+ 
 
           /* *************************************************************************hero */
 
@@ -703,7 +706,7 @@ width: 100%;
 
 
           .items h2{
-            font-size: clamp(1rem, 1.7vw, 10rem);
+            font-size: clamp(1rem, 2.2vw, 10rem);
             color: #EB3939;
             font-weight: bolder; 
        
@@ -714,7 +717,7 @@ width: 100%;
 
           .items p {
   
-            font-size: clamp(1rem, 1.7vw, 10rem);
+            font-size: clamp(1rem, 1.5vw, 10rem);
         }
     
 
