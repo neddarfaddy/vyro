@@ -703,7 +703,7 @@ width: 100%;
 
 
           .items h2{
-            font-size: 3.1rem; 
+            font-size: clamp(1rem, 1.7vw, 10rem);
             color: #EB3939;
             font-weight: bolder; 
        
@@ -714,7 +714,7 @@ width: 100%;
 
           .items p {
   
-          font-size: 2rem;
+            font-size: clamp(1rem, 1.7vw, 10rem);
         }
     
 
