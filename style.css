@@ -212,7 +212,7 @@ z-index: 1000;
       background-size: cover;      
   background-position: center; 
   background-repeat: no-repeat; 
-      background-image: url(./imgs/Young-man-portrait.png);
+      background-image: url(./imgs/Young-noback.png);
       display: flex;
       align-items: end;
       padding-left: 1rem;
