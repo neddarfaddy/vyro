@@ -485,15 +485,15 @@ row-gap: 1rem;
 /* Optional, adjust as needed *//* Optional, adjust as needed *//* Optional, adjust as needed */
       header ol a {
    
-    font-size: clamp(1.5rem, 2vw, 4rem);
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
     color: #7a7367;
-    transition: color 0.3s ease; 
+    transition: color 1.3s ease, font-size 0.5s ease-in-out; 
 
       }
 
       header ol a:hover {
    
-        font-size: 2.5rem;
+        font-size: 3.5rem;
 color: #B7AB98;          }
 
 
@@ -633,7 +633,7 @@ width: 100%;
           }
       
           .reason-content h3{
-            font-size: 5.9rem; 
+            font-size: clamp(1rem, 2vw, 15rem); 
             color: #EB3939;
             margin-bottom: 1rem;
           }
