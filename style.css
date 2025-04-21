@@ -645,7 +645,7 @@ width: 100%;
           .reason-content p {
             font-weight: bolder;
             font-size: clamp(1rem, 4vw, 15rem); 
-            line-height: 8.5rem; 
+            line-height: clamp(1rem, 4vw, 15rem); 
       
           }
 
